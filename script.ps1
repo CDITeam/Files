@@ -171,13 +171,13 @@ $PlayWav=New-Object System.Media.SoundPlayer;$PlayWav.SoundLocation="$env:TMP\s.
 #----------------------------------------------------------------------------------------------------
 
 # This turns the volume up to max level
-$k=[Math]::Ceiling(100/2);$o=New-Object -ComObject WScript.Shell;for($i = 0;$i -lt $k;$i++){$o.SendKeys([char] 175)}
+#$k=[Math]::Ceiling(100/2);$o=New-Object -ComObject WScript.Shell;for($i = 0;$i -lt $k;$i++){$o.SendKeys([char] 175)}
 
 #----------------------------------------------------------------------------------------------------
 
 Pause-Script
 Set-WallPaper -Image "$env:TMP\i.png" -Style Center
-#Play-WAV
+Play-WAV
 
 #----------------------------------------------------------------------------------------------------
 
